@@ -1,0 +1,39 @@
+{
+  "name": "react-tweet",
+  "version": "0.0.1",
+  "description": "Simple component for a tweet built with just react.",
+  "private": true,
+  "author": "John Darryl Pelingo <johndarrylpelingo@gmail.com> (https://github.com/john-d-pelingo)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/john-d-pelingo/hello-react.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "lint": "eslint .",
+    "eject": "cross-env NODE_PATH=src react-scripts eject",
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "sweep": "rimraf build coverage",
+    "test": "cross-env CI=true react-scripts test --env=jsdom --no-cache",
+    "w:lint": "esw . --config .eslintrc.yml --color --watch",
+    "w:test": "cross-env react-scripts test --env=jsdom --no-cache"
+  },
+  "dependencies": {
+    "moment": "2.18.1",
+    "prop-types": "15.5.10",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-scripts": "1.0.10"
+  },
+  "devDependencies": {
+    "cross-env": "5.0.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.2",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
+    "eslint-watch": "3.1.2",
+    "rimraf": "2.6.1"
+  }
+}
